@@ -4,7 +4,20 @@ public class Main {
         for (int i = 0; i < intArray.length; i++) {
             intArray[i] = (int) (Math.random() * 100) +1;
         }
-        System.out.println("hello");
 
+        System.out.println(maxVal(intArray));
     }
+
+    public static int maxVal (int [] intArray){
+        int max = intArray[0];
+        for (int i = 0; i < intArray.length; i++) {
+            if (intArray[i]>max){
+                max = intArray[i];
+            }
+        }
+        return max;
+    }
+
+
+
 }
