@@ -7,6 +7,7 @@ public class Main {
         }
         System.out.println("The number with the minimum value is" + minVal(intArray) + ".");
         System.out.println("The number of even numbers in the given array " + numEven(intArray) + ".");
+        System.out.println("The sum of the values of the odd numbers in the given array is " + sumOddNumbers(intArray) + ".");
 
     }
 
@@ -29,5 +30,15 @@ public class Main {
             }
         }
         return count;
+    }
+    public static int sumOddNumbers(int[] intArray) {
+        System.out.println(Arrays.toString(intArray));
+        int sum = 0;
+        for (int i = 0; i < intArray.length; i++) {
+            if (intArray[i] % 2 != 0) {
+                sum += intArray[i];
+            }
+        }
+        return sum;
     }
 }
