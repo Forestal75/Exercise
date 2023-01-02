@@ -10,6 +10,8 @@ public class Main {
         System.out.println("The sum of the values of the odd numbers in the given array is " + sumOddNumbers(intArray) + ".");
 
         System.out.println(maxValue(intArray));
+        System.out.println(numbersOdd(intArray));
+        System.out.println(sumEven(intArray));
     }
 
     public static int maxValue (int [] intArray){
@@ -20,6 +22,26 @@ public class Main {
             }
         }
         return max;
+    }
+
+    public static int numbersOdd (int [] intArray) {
+        int counter = 0;
+        for (int i = 0; i < intArray.length; i++) {
+            if (intArray[i] % 2 != 0) {
+                counter ++;
+            }
+        }
+        return counter;
+    }
+
+    public static int sumEven (int [] intArry) {
+        int sum = 0;
+        for (int i = 0; i < intArry.length; i++) {
+            if (intArry[i] % 2 == 0) {
+                sum += intArry[i];
+            }
+        }
+        return sum;
     }
 
     public static int minValue(int[] intArray) {
