@@ -6,6 +6,7 @@ public class Main {
             intArray[i] = (int) (Math.random() * 100) +1;
         }
         System.out.println("The number with the minimum value is" + minVal(intArray) + ".");
+        System.out.println("The number of even numbers in the given array " + numEven(intArray) + ".");
 
     }
 
@@ -18,5 +19,15 @@ public class Main {
             }
         }
         return min;
+    }
+    public static int numEven(int[] intArray) {
+        System.out.println(Arrays.toString(intArray));
+        int count = 0;
+        for (int i = 0; i < intArray.length; i++) {
+            if (intArray[i] % 2 == 0) {
+                count++;
+            }
+        }
+        return count;
     }
 }
