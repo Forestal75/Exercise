@@ -5,14 +5,14 @@ public class Main {
         for (int i = 0; i < intArray.length; i++) {
             intArray[i] = (int) (Math.random() * 100) +1;
         }
-        System.out.println("The number with the minimum value is" + minVal(intArray) + ".");
-        System.out.println("The number of even numbers in the given array " + numEven(intArray) + ".");
+        System.out.println("The number with the minimum value is" + minValue(intArray) + ".");
+        System.out.println("The number of even numbers in the given array " + numbersEven(intArray) + ".");
         System.out.println("The sum of the values of the odd numbers in the given array is " + sumOddNumbers(intArray) + ".");
 
-        System.out.println(maxVal(intArray));
+        System.out.println(maxValue(intArray));
     }
 
-    public static int maxVal (int [] intArray){
+    public static int maxValue (int [] intArray){
         int max = intArray[0];
         for (int i = 0; i < intArray.length; i++) {
             if (intArray[i]>max){
@@ -22,7 +22,7 @@ public class Main {
         return max;
     }
 
-    public static int minVal(int[] intArray) {
+    public static int minValue(int[] intArray) {
         System.out.println(Arrays.toString(intArray));
         int min = intArray[0];
         for (int i = 0; i < intArray.length; i++) {
@@ -32,7 +32,7 @@ public class Main {
         }
         return min;
     }
-    public static int numEven(int[] intArray) {
+    public static int numbersEven(int[] intArray) {
         System.out.println(Arrays.toString(intArray));
         int count = 0;
         for (int i = 0; i < intArray.length; i++) {
